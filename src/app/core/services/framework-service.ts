@@ -9,7 +9,7 @@ import { Framework } from '../../models/framework';
 })
 
 export class FrameworkService {
-
+ 
       http = inject(HttpClient)
   frameworkUrl = 'http://localhost:3000/machlouframeworks_tool'
 

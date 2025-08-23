@@ -15,10 +15,11 @@ import { FrameworkService } from '../../core/services/framework-service';
 import { Framework } from '../../models/framework';
 import { Project } from '../../pages/project/project';
 import { Certificate } from '../../pages/certificate/certificate';
+import { Contact } from '../../pages/contact/contact';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [NgClass, NavBar, Home, About, Technology, Project, Certificate],
+  imports: [NgClass, NavBar, Home, About, Technology, Project, Certificate, Contact],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })

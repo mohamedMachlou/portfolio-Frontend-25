@@ -33,13 +33,14 @@
 
     .projects .projects-body .project {
         width: 300px;
-        height: 300px;
+        height: 220px;
         background-color: #1d1b1b;
         border: 1px solid #554f4f;
         border-radius: 8px;
+        padding: 10px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         position: relative;
     }
 

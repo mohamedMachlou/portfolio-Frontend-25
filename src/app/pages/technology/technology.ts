@@ -41,14 +41,13 @@ export class Technology implements OnInit {
     // Load Backend Frameworks & Outils
     this.frameworkService.getAllFrameworks().subscribe((backend_Outil) => {
       this.backends.set(backend_Outil)
-      console.log(this.backends())
     })
 
     // Load Devops
     this.desvopsService.getAllDevops().subscribe((devops) => {
       this.allDevops.set(devops)
     })
-    
+
   }
 
 

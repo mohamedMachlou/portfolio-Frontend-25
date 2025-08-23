@@ -14,10 +14,11 @@ import { Technology } from '../../pages/technology/technology';
 import { FrameworkService } from '../../core/services/framework-service';
 import { Framework } from '../../models/framework';
 import { Project } from '../../pages/project/project';
+import { Certificate } from '../../pages/certificate/certificate';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [NgClass, NavBar, Home, About, Technology, Project],
+  imports: [NgClass, NavBar, Home, About, Technology, Project, Certificate],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })
@@ -49,7 +50,7 @@ export class Dashboard implements OnInit {
   linkedin: '',
   github: '',
   facebook: '',
-  instagram: '', 
+  instagram: '',
   twitter: '',
   photo: '',
   downloadcv: ''

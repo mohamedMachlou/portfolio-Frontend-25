@@ -11,11 +11,13 @@
       <div class="certificates">
         <div class="certificates-body">
 
+          @for(certificate of allCertificates(); track certificate.id) {
             <div class="certificate" id="certificates">
-                <img src="/images/photo__Personnel--500_500.png" alt="">
-                <div class="title">Certificate</div>
-                <i class="fa-brands fa-staylinked" (click)="goToLink('https://www.facebook.com/')"></i>
+                <img [src]="certificate.photo ? 'http://localhost:3000/certificatephoto/' + certificate.photo : '/images/photo__Personnel--500_500.png'" alt="">
+                <div class="title"> {{ certificate.title }} </div>
+                <i class="fa-brands fa-staylinked" (click)="goToLink('certificate.link')"></i>
             </div>
+          }
 
         </div>
     </div>

@@ -49,7 +49,7 @@ export class Dashboard implements OnInit {
   linkedin: '',
   github: '',
   facebook: '',
-  instagram: '',
+  instagram: '', 
   twitter: '',
   photo: '',
   downloadcv: ''

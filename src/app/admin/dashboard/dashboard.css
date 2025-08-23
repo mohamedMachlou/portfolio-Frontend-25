@@ -35,7 +35,7 @@
 
     .certificates .certificates-body {
         width: 80%;
-        min-height: 80vh;
+        min-height: 60vh;
         background-color: #0D0D0D;
         padding: 20px;
         display: flex;

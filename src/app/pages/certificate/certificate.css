@@ -1,0 +1,104 @@
+
+
+/* Start certificates  */
+
+    .sec-certificates {
+        background-color: #0D0D0D;
+        color: white;
+    }
+
+    .certificates {
+        width: 100%;
+        background-color: #868080;
+        background-color: #0D0D0D;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+         border: none;
+        outline: none;
+    }
+
+    .certificates .certificates-body {
+        width: 80%;
+        min-height: 60vh;
+        background-color: #0D0D0D;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .certificates .certificates-body .certificate {
+        width: 400px;
+        height: 300px;
+        background-color: #1d1b1b;
+        border: 1px solid #554f4f;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .certificates .certificates-body .certificate:hover {
+        border: 1px solid #e42121;
+    }
+
+    .certificates .certificates-body .certificate img {
+        width: 380px;
+        height: 280px;
+        border: 1px solid #554f4f;
+        border-radius: 8px;
+        background-color: #1d1b1b;
+    }
+
+    .certificates .certificates-body .certificate .title {
+        width: 100%;
+        height: 40px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: start;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        color: #e42121;
+        color: #6d6a6a;
+    }
+
+    .certificates .certificates-body .certificate:hover .title{
+        color: #e42121;
+    }
+
+    .certificates .certificates-body .certificate i  {
+        font-weight: 500;
+        font-size: 25px;
+        color: #868080;
+        margin: 5px;
+        border: none;
+        border-radius: 8px;
+        background-color: transparent;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .certificates .certificates-body .certificate i:nth-child(3) {
+        bottom: 15px;
+        right: 30px;
+    }
+
+    .certificates .certificates-body .certificate:hover i {
+        color: #e42121;
+    }
+
+    .certificates .certificates-body .certificate i:hover  {
+        color: #971515;
+        transform: scaleY(1.2);
+    }
+
+/* End certificates  */

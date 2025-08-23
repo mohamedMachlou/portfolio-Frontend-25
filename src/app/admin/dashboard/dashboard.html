@@ -1,8 +1,9 @@
+<app-nav-bar></app-nav-bar>
 <div class="container">
 
     <!-- Start Nav bar -->
-    <div class="nav-bar" [ngClass]="this.isScrolled() ? 'show-nav': 'hide-nav'">
-        <div class="navbar-body" [ngClass]="this.isScrolled() ? 'show-nav': 'hide-nav'">
+    <!-- <div class="nav-bar" [ngClass]="this.isScrolled() ? 'show-nav': 'hide-nav'"> -->
+        <!-- <div class="navbar-body" [ngClass]="this.isScrolled() ? 'show-nav': 'hide-nav'">
 
             <div class="logo" (click)="scrollToSection('home')">
                 MOHAMED <span>MACHLOU</span>
@@ -44,21 +45,25 @@
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Start Open/Close Menu -->
-            <div [ngClass]="this.openMenuStatus() ? 'open-menu' : 'close-menu'" (click)="switchMenu()" >
+            <!-- <div [ngClass]="this.openMenuStatus() ? 'open-menu' : 'close-menu'" (click)="switchMenu()" >
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
 
             <!-- End Open/Close Menu -->
 
-        </div>
-    </div>
+        <!-- </div> -->
+    <!-- </div> -->
     <!-- End Nav bar -->
 
+
+
+
+    
     <!-- Start Intro -->
     <div class="intro" id="home">
 
@@ -215,12 +220,12 @@
 
                         <div class="skill">
                             <div class="skill-infos">
-                                <div class="skill-title">{{ backend.skill }}</div>
-                                <div class="skill-porc">{{ backend.skill_prc}}%</div>
+                                <!-- <div class="skill-title">{{ backend.skill }}</div> -->
+                                <!-- <div class="skill-porc">{{ backend.skill_prc}}%</div> -->
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-bar-body">
-                                    <div class="bar" [style.width]= `${backend.skill_prc_width}px`></div>
+                                    <!-- <div class="bar" [style.width]= `${backend.skill_prc_width}px`></div> -->
                                 </div>
                             </div>
                         </div>

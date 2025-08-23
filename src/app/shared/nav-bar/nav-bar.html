@@ -1,1 +1,58 @@
-<p>nav-bar works!</p>
+  <!-- Start Nav bar -->
+    <div class="nav-bar" [ngClass]="this.isScrolled() ? 'show-nav': 'hide-nav'">
+        <div class="navbar-body" [ngClass]="this.isScrolled() ? 'show-nav': 'hide-nav'">
+
+            <div class="logo" (click)="scrollToSection('home')">
+                MOHAMED <span>MACHLOU</span>
+            </div>
+            <div class="nav" [ngClass]="this.openMenuStatus() ? 'show-links' : 'hide-links'">
+                <div class="links">
+
+                    <ul>
+                        <li (click)="scrollToSection('home')" [ngClass]="{ 'li-active': activeSection === 'home' }">
+                            <div class="li-line" [ngClass]="{ 'line-active': activeSection === 'home' }"></div>HOME
+                        </li>
+                        <li (click)="scrollToSection('about')" [ngClass]="{ 'li-active': activeSection === 'about' }">
+                            <div class="li-line" [ngClass]="{ 'line-active': activeSection === 'about' }"></div>ABOUT
+                        </li>
+                        <li (click)="scrollToSection('skills')" [ngClass]="{ 'li-active': activeSection === 'skills' }">
+                            <div class="li-line" [ngClass]="{ 'line-active': activeSection === 'skills' }"></div>SKILLS
+                        </li>
+                        <li (click)="scrollToSection('projects')" [ngClass]="{ 'li-active': activeSection === 'projects' }">
+                            <div class="li-line" [ngClass]="{ 'line-active': activeSection === 'projects' }"></div>PROJECTS
+                        </li>
+                        <li (click)="scrollToSection('certificates')" [ngClass]="{ 'li-active': activeSection === 'certificates' }">
+                            <div class="li-line" [ngClass]="{ 'line-active': activeSection === 'certificates' }"></div>CERTIFICATES
+                        </li>
+                        <li (click)="scrollToSection('contact')" [ngClass]="{ 'li-active': activeSection === 'contact' }">
+                            <div class="li-line" [ngClass]="{ 'line-active': activeSection === 'contact' }"></div>CONTACT
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="social">
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Open/Close Menu -->
+            <div [ngClass]="this.openMenuStatus() ? 'open-menu' : 'close-menu'" (click)="switchMenu()" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- End Open/Close Menu -->
+
+        </div>
+    </div>
+    <!-- End Nav bar -->

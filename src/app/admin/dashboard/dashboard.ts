@@ -1,15 +1,18 @@
 import { Component, HostListener, inject, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { Admin } from '../../core/services/admin';
 import { ProgrammingLanguage } from '../../core/services/programming-language';
 import { Framework } from '../../core/services/framework';
 import { Devops } from '../../core/services/devops';
 import { ProgLang } from '../../models/prog-lang';
 import { DevopsOther } from '../../models/devops-other';
+import { AdminService } from '../../core/services/admin-service';
+import { Admin } from '../../models/admin';
+import { NgClass } from '@angular/common';
+import { NavBar } from '../../shared/nav-bar/nav-bar';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [NgClass, NavBar],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })
@@ -19,7 +22,7 @@ export class Dashboard implements OnInit {
   router = inject(Router);
 
   // Services
-  adminService = inject(Admin);
+  adminService = inject(AdminService);
   progLangServices = inject(ProgrammingLanguage)
   frameworkService = inject(Framework)
   desvopsService = inject(Devops)
@@ -80,6 +83,7 @@ ngOnInit(): void {
     // Load Backend Frameworks & Outils
     this.frameworkService.getAllFrameworks().subscribe((backend_Outil) => {
       this.backends.set(backend_Outil)
+      console.log(this.backends())
     })
 
     // Load Devops

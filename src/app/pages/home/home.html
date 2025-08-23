@@ -1,1 +1,53 @@
-<p>home works!</p>
+    <!-- Start Intro -->
+    <div class="intro" id="home">
+
+        <!-- Start Angles -->
+        <div class=" top-left"></div>
+        <div class=" top-right"></div>
+        <div class=" bottom-left"></div>
+        <div class=" bottom-right"></div>
+        <!-- End Angles -->
+
+        <div class="title">HI, I'M <span> {{ this.admin().firstName }} {{ this.admin().lastName }} </span></div>
+        <div class="sub-title">🚀 {{ this.admin().specialty }} {{ this.admin().jobTitle }}</div>
+        <div class="para">
+            <p>
+                {{ this.admin().description }}
+            </p>
+        </div>
+        <div class="btn">
+            <button type="button" (click)="scrollToSection('projects')" >VIEW MY WORK</button>
+            <button type="button" (click)="goToLink(this.downloadcv())">DOWNLOAD CV</button>
+        </div>
+
+        <div class="social">
+            <div class="social-body">
+
+                <div class="social-centent" (click)="goToLink(this.github())">
+                    <div class="github"  >
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="social-centent" (click)="goToLink(this.linkedin())" >
+                    <div class="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                </div>
+                <div class="social-centent" (click)="goToLink(this.instagram())">
+                    <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                </div>
+                <div class="social-centent">
+                    <div class="contact-icon" (click)="scrollToSection('contact')">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- End Intro -->

@@ -49,10 +49,15 @@ export class NavBar {
   // End Scroll Vers Section spécifique
 
 
-    // Start Open and Close Menu
+  // Start Open and Close Menu
   switchMenu() {
     this.openMenuStatus.set(!this.openMenuStatus());
     console.log('switch status to : ', this.openMenuStatus());
+  }
+
+  // Liens externes
+  goToLink(link: string): void {
+    window.open(link, '_blank', 'noopener,noreferrer');
   }
 
 

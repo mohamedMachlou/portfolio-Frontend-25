@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Project {
 
+  
+
+
+  // Liens externes
+  goToLink(link: string): void {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  }
+
 }

@@ -1,7 +1,6 @@
 import { Component, HostListener, inject, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProgrammingLanguage } from '../../core/services/programming-language';
-import { Framework } from '../../core/services/framework';
 import { Devops } from '../../core/services/devops';
 import { ProgLang } from '../../models/prog-lang';
 import { DevopsOther } from '../../models/devops-other';
@@ -11,10 +10,14 @@ import { NgClass } from '@angular/common';
 import { NavBar } from '../../shared/nav-bar/nav-bar';
 import { Home } from '../../pages/home/home';
 import { About } from '../../pages/about/about';
+import { Technology } from '../../pages/technology/technology';
+import { FrameworkService } from '../../core/services/framework-service';
+import { Framework } from '../../models/framework';
+import { Project } from '../../pages/project/project';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [NgClass, NavBar, Home, About],
+  imports: [NgClass, NavBar, Home, About, Technology, Project],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })
@@ -26,7 +29,7 @@ export class Dashboard implements OnInit {
   // Services
   adminService = inject(AdminService);
   progLangServices = inject(ProgrammingLanguage)
-  frameworkService = inject(Framework)
+  frameworkService = inject(FrameworkService)
   desvopsService = inject(Devops)
 
   // Variables

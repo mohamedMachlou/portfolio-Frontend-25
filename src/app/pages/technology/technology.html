@@ -1,1 +1,86 @@
-<p>technology works!</p>
+     <!-- Start Section for Skills & Technologies -->
+    <div class="section sec-skills" id="skills">
+        <div class="title">Skills & Technologies</div>
+        <div class="line"></div>
+        <div class="description">
+            These are the languages, tools,
+            and frameworks I use to build secure and scalable applications.
+        </div>
+    </div>
+    <!-- End Section for  Skills & Technologies -->
+
+    <!-- Start Skills & Technologies -->
+     <div class="skills">
+         <div class="skills-body">
+
+            @if(progLanguages().length != 0) {
+
+                <div class="skills-blocks" id="skills">
+
+                    <div class="title">Programming Languages</div>
+                     <div class="skill" id="skills">
+
+                    @for(proglang of progLanguages(); track proglang){
+                         <div class="skill-infos">
+                             <div class="skill-title"> {{ proglang.skill }} </div>
+                             <div class="skill-porc">{{ proglang.skill_prc }}%</div>
+                         </div>
+                         <div class="skill-bar">
+                             <div class="skill-bar-body">
+                                 <div class="bar" [style.width]= `${proglang.skill_prc_width}px` ></div>
+                             </div>
+                         </div>
+                     }
+
+                     </div>
+                 </div>
+            }
+
+             @if(backends().length != 0) {
+
+                 <div class="skills-blocks" id="skills">
+                     <div class="title">Backend & Tools</div>
+                    @for(backend of backends(); track backend){
+
+                        <div class="skill">
+                            <div class="skill-infos">
+                                <div class="skill-title">{{ backend.skill }}</div>
+                                <div class="skill-porc">{{ backend.skill_prc}}%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-body">
+                                    <div class="bar" [style.width]= `${backend.skill_prc_width}px`></div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                 </div>
+             }
+
+             @if(allDevops().length != 0) {
+
+                 <div class="skills-blocks" id="skills">
+                     <div class="title"> DevOps & Others </div>
+                    @for(devops of allDevops(); track devops){
+
+                        <div class="skill">
+                            <div class="skill-infos">
+                                <div class="skill-title">{{ devops.skill }}</div>
+                                <div class="skill-porc">{{ devops.skill_prc }}%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-body">
+                                    <div class="bar" [style.width]=`${devops.skill_prc_width}px` ></div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                 </div>
+             }
+
+
+         </div>
+     </div>
+    <!-- End Skills & Technologies -->

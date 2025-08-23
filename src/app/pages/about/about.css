@@ -1,0 +1,171 @@
+ /* Start About */
+
+.sec-about {
+    background-color: #0D0D0D;
+    color: white;
+}
+
+ .about {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+    background-color: #0D0D0D;
+    color: white;
+    line-height: 25px;
+    border: none;
+    outline: none;
+}
+
+ .about .image {
+    width: 450px;
+    height: 450px;
+    margin-right: 70px;
+    background-color: #161111;
+    border-radius: 8px;
+    border: 0.3px solid rgb(104, 101, 101);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .about .image .back-one {
+    width: 380px;
+    height: 380px;
+    border-radius: 8px;
+    background-color: #321818;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .about .image .back-one .back-two {
+    width: 225px;
+    height: 225px;
+    border-radius: 8px;
+    background-color: #5A1F1F;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image .back-one .back-two img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 4px solid #EF3939;
+    position: absolute;
+}
+
+ .about .infos {
+    width: 600px;
+    min-height: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+ .about .infos .title {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+ .about .infos .title span {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+ .about .infos .description {
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #aca7a7;
+}
+
+ .about .infos .projects-intership {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: #aca7a7;
+}
+
+.about .infos .projects-intership .info-plus {
+    width: 240px;
+    height: 110px;
+    border: 1px solid rgb(82, 80, 80);
+    border-radius: 8px;
+    background-color: #0F0F0F;
+}
+
+.about .infos .projects-intership .info-plus .number {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.about .infos .projects-intership .info-plus .title {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .infos .projects-intership .project .number {
+    color: var(--primary-color);
+}
+
+.about .infos .projects-intership .intership .number {
+    color: rgb(61, 58, 58);
+}
+
+ .about .infos .info {
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #aca7a7;
+}
+
+ .about .infos .info .cercle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+ .about .infos .info .cercle1 {
+    background-color: var(--primary-color);
+}
+ .about .infos .info .cercle2 {
+    background-color: rgb(119, 94, 89);
+}
+ .about .infos .info .cercle3 {
+    background-color: rgb(139, 136, 136);
+}
+/* End About */

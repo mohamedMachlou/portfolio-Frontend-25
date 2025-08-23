@@ -10,10 +10,11 @@ import { Admin } from '../../models/admin';
 import { NgClass } from '@angular/common';
 import { NavBar } from '../../shared/nav-bar/nav-bar';
 import { Home } from '../../pages/home/home';
+import { About } from '../../pages/about/about';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [NgClass, NavBar, Home],
+  imports: [NgClass, NavBar, Home, About],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })

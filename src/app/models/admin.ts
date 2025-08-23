@@ -1,5 +1,5 @@
 export interface Admin {
-    firstName: string;
+  firstName: string;
   lastName: string;
   description: string;
   diplome: string;

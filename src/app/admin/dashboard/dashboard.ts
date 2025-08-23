@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, HostListener, inject, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { Admin } from '../../core/services/admin';
 import { ProgrammingLanguage } from '../../core/services/programming-language';
@@ -13,7 +13,7 @@ import { DevopsOther } from '../../models/devops-other';
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })
-export class Dashboard {
+export class Dashboard implements OnInit {
 
   // Injection
   router = inject(Router);

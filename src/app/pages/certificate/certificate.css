@@ -38,9 +38,10 @@
         background-color: #1d1b1b;
         border: 1px solid #554f4f;
         border-radius: 8px;
+        padding: 10px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         position: relative;
     }
 
@@ -50,7 +51,7 @@
 
     .certificates .certificates-body .certificate img {
         width: 380px;
-        height: 280px;
+        height: 230px;
         border: 1px solid #554f4f;
         border-radius: 8px;
         background-color: #1d1b1b;

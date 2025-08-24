@@ -15,7 +15,7 @@
             <div class="certificate" id="certificates">
                 <img [src]="certificate.photo ? 'http://localhost:3000/certificatephoto/' + certificate.photo : '/images/photo__Personnel--500_500.png'" alt="">
                 <div class="title"> {{ certificate.title }} </div>
-                <i class="fa-brands fa-staylinked" (click)="goToLink('certificate.link')"></i>
+                <i class="fa-brands fa-staylinked" (click)="goToLink(certificate.link)"></i>
             </div>
           }
 

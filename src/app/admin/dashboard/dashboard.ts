@@ -17,7 +17,7 @@ import { Project } from '../../pages/project/project';
 import { Certificate } from '../../pages/certificate/certificate';
 import { Contact } from '../../pages/contact/contact';
 
-@Component({
+@Component({ 
   selector: 'app-dashboard',
   imports: [NgClass, NavBar, Home, About, Technology, Project, Certificate, Contact],
   templateUrl: './dashboard.html',

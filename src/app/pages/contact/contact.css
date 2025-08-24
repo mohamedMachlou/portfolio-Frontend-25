@@ -23,7 +23,7 @@
     .contact .contact-body {
         width: 80%;
         min-height: 100vh;
-        padding: 20px;
+        padding: 20px; 
         background-color: #131313;
         display: flex;
         flex-wrap: wrap;

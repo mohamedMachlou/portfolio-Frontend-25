@@ -1,0 +1,76 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: #20020f;
+}
+
+.login .login-body {
+  width: 100%;
+  height: 100vh;
+  background-color: #070606;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .login-body .form {
+  width: 400px;
+  height: 350px;
+  padding: 40px 20px;
+  background-color: #131212;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #444040;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login .login-body .form .form-group {
+  width: 360px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.login .login-body .form .form-group label {
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  color: rgb(196, 202, 207);
+}
+
+.login .login-body .form .form-group input {
+  width: 100%;
+  height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  caret-color: black;
+  padding: 10px;
+  background-color: rgb(196, 202, 207);
+}
+
+.login .login-body .form .form-group:last-child {
+  margin-top: 30px;
+}
+
+.login .login-body .form .form-group button {
+  width: 100%;
+  height: 35px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

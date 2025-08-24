@@ -16,15 +16,16 @@ import { Framework } from '../../models/framework';
 import { Project } from '../../pages/project/project';
 import { Certificate } from '../../pages/certificate/certificate';
 import { Contact } from '../../pages/contact/contact';
+import { Login } from '../login/login';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [NgClass, NavBar, Home, About, Technology, Project, Certificate, Contact],
+  imports: [NgClass, NavBar, Home, About, Technology, Project, Certificate, Contact, Login],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })
 export class Dashboard implements OnInit {
- 
+
   // Injection
   router = inject(Router);
 

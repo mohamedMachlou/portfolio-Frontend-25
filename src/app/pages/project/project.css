@@ -20,7 +20,7 @@
     }
 
     .projects .projects-body {
-        width: 80%;
+        width: 83%;
         min-height: 50vh;
         background-color: #0D0D0D;
         padding: 20px;
@@ -102,3 +102,68 @@
 
 
 /* End Projects  */
+
+
+
+
+/*//////////////////////////////////////////////////////////////*/
+/*/////////////// Start Media Queries */
+/*//////////////////////////////////////////////////////////////*/
+
+/* Extra large devices (large desktops,  1400px) */
+@media (min-width: 1400px) {
+
+
+
+}
+/* Extra large devices (large desktops, 1200px to 1400px) */
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+
+}
+/* Extra large devices (large desktops, 992px to 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+
+}
+/* Medium devices (tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+}
+/* Small devices (landscape phones, 576px to 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+
+     .projects .projects-body {
+        width: 80%;
+        min-height: 50vh;
+        background-color: #0D0D0D;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+  }
+  /* Small devices (Portrait phones, 576px and down) */
+  @media (max-width: 576px) {
+
+    .projects .projects-body {
+       width: 80%;
+       min-height: 50vh;
+       background-color: #0D0D0D;
+       padding: 20px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: flex-start;
+       gap: 30px;
+   }
+
+  }
+
+  /* End Media Queries */

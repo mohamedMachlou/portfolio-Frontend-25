@@ -24,12 +24,12 @@ import { Contact } from '../../pages/contact/contact';
   styleUrl: './dashboard.css'
 })
 export class Dashboard implements OnInit {
-
+ 
   // Injection
   router = inject(Router);
 
   // Services
-  adminService = inject(AdminService); 
+  adminService = inject(AdminService);
   progLangServices = inject(ProgrammingLanguage)
   frameworkService = inject(FrameworkService)
   desvopsService = inject(Devops)

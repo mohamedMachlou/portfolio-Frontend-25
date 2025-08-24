@@ -203,3 +203,82 @@
     }
 /* End Intro */
 
+
+/*//////////////////////////////////////////////////////////////*/
+/*/////////////// Start Media Queries */
+/*//////////////////////////////////////////////////////////////*/
+
+/* Extra large devices (large desktops,  1400px) */
+@media (min-width: 1400px) {
+
+
+}
+/* Extra large devices (large desktops, 1200px to 1400px) */
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+}
+/* Extra large devices (large desktops, 992px to 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+/* Medium devices (tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+}
+/* Small devices (landscape phones, 576px to 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+
+
+
+
+}
+/* Small devices (Portrait phones, 576px and down) */
+@media (max-width: 576px) {
+
+    .intro {
+        min-height: 50vh;
+        padding-top: 60px;
+    }
+
+    .intro .title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .intro .title span{
+        color:  var( --primary-color);
+        padding-left: 10px;
+    }
+
+    .intro .sub-title {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .intro .para {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B3B3B3;
+    }
+
+    .intro .para p {
+        width: 90%;
+        text-align: center;
+        padding: 20px;
+        font-weight: 400;
+        font-size: 15px;
+
+    }
+
+
+
+
+}
+
+/* End Media Queries */
+

@@ -40,7 +40,7 @@ export class NavBar {
 
 
   // Start Scroll Vers Section spécifique
-  scrollToSection(sectionId: string) {
+  scrollToSection(sectionId: string) { 
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });

@@ -19,7 +19,6 @@ export class NavBar {
 
 
 
-
     // Détecter scroll
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -40,8 +39,9 @@ export class NavBar {
 
 
   // Start Scroll Vers Section spécifique
-  scrollToSection(sectionId: string) { 
+  scrollToSection(sectionId: string) {
       const element = document.getElementById(sectionId);
+      this.switchMenu()
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }

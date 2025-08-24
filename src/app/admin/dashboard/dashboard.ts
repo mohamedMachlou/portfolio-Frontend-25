@@ -17,7 +17,7 @@ import { Project } from '../../pages/project/project';
 import { Certificate } from '../../pages/certificate/certificate';
 import { Contact } from '../../pages/contact/contact';
 
-@Component({ 
+@Component({
   selector: 'app-dashboard',
   imports: [NgClass, NavBar, Home, About, Technology, Project, Certificate, Contact],
   templateUrl: './dashboard.html',
@@ -29,7 +29,7 @@ export class Dashboard implements OnInit {
   router = inject(Router);
 
   // Services
-  adminService = inject(AdminService);
+  adminService = inject(AdminService); 
   progLangServices = inject(ProgrammingLanguage)
   frameworkService = inject(FrameworkService)
   desvopsService = inject(Devops)

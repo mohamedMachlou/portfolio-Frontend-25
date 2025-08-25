@@ -13,6 +13,7 @@
     align-items: center;
     border: none;
     outline: none;
+    position: relative;
 }
 
 .skills-body {

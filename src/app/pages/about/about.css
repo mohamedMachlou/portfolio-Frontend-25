@@ -17,6 +17,7 @@
     line-height: 25px;
     border: none;
     outline: none;
+    position: relative;
 }
 
  .about .image {

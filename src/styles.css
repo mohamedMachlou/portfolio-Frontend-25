@@ -132,6 +132,20 @@ button {
     border-radius: 6px;
 }
 
+.update-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #a3a1a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+   font-size: 18px;
+}
 
 
 /* End Components  */

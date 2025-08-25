@@ -3,7 +3,7 @@
     <form [formGroup]="form" (ngSubmit)="login()" class="form">
       <div class="form-group">
         <label for="">EMAIL</label>
-        <input (keyup)="isvalid()" formControlName="email" type="text" />
+        <input  formControlName="email" type="text" />
 
         @if (email?.touched && email?.errors) {
         <div class="alert-danger mt-1">

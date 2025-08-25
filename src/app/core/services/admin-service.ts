@@ -12,6 +12,11 @@ export class AdminService {
   http = inject(HttpClient);
   adminUrl = 'http://localhost:3000/machlouadmin'
 
+  // Login Method
+  login(admin: Admin): Observable<Admin>{
+    return this.http.post<Admin>(`${this.adminUrl}log`,admin)
+
+  }
 
     // Get All Admin
   getAllAdmins(): Observable<Admin[]>{

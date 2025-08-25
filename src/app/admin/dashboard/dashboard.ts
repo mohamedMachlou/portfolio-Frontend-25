@@ -27,7 +27,7 @@ import { Login } from '../login/login';
 export class Dashboard implements OnInit {
 
   // Injection
-  router = inject(Router);
+  router = inject(Router); 
 
   // Services
   adminService = inject(AdminService);

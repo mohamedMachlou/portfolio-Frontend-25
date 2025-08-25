@@ -22,7 +22,7 @@ export class Home implements OnInit {
     lastName: '',
     description: '',
     diplome: '',
-    jobTitle: '',
+    jobTitle: '', 
     experience: '',
     specialty: '',
     addresse: '',

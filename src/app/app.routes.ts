@@ -7,14 +7,16 @@ import { Technology } from './pages/technology/technology';
 import { Project } from './pages/project/project';
 import { Certificate } from './pages/certificate/certificate';
 import { Contact } from './pages/contact/contact';
+import { adminGuard } from './core/guards/admin-guard';
 
 export const routes: Routes = [
   { path: 'admin/login', component: Login },
   { path: '', component: Dashboard },
-  {path: 'admin/manage-home', component: Home},
-  {path: 'admin/manage-about', component: About},
-  {path: 'admin/manage-technology', component: Technology},
-  {path: 'admin/manage-project', component: Project},
-  {path: 'admin/manage-certificate', component: Certificate},
-  {path: 'admin/manage-contact', component: Contact},
+
+  {path: 'admin/manage-home', component: Home, canActivate: [adminGuard] },
+  {path: 'admin/manage-about', component: About, canActivate: [adminGuard] },
+  {path: 'admin/manage-technology', component: Technology, canActivate: [adminGuard] },
+  {path: 'admin/manage-project', component: Project, canActivate: [adminGuard] },
+  {path: 'admin/manage-certificate', component: Certificate, canActivate: [adminGuard] },
+  {path: 'admin/manage-contact', component: Contact, canActivate: [adminGuard] },
 ];

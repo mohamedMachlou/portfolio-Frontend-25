@@ -109,6 +109,29 @@ button {
     color: #807b7b;
 }
 
+/* .alert {
+    width: 250px;
+    padding: 6px 12px;
+  } */
+
+  .alert-success {
+  width: 250px;
+  width: 100%;
+  padding: 6px 12px;
+  padding: 5px 60px;
+  background-color: #D4EDDA;
+  color: #0F5132;
+  border-radius: 6px;
+}
+.alert-danger {
+  width: 100%;
+  padding: 6px 12px;
+    padding: 5px 20px;
+    background-color: #F8D7DA;
+    color:  #581a0b;
+    border-radius: 6px;
+}
+
 
 
 /* End Components  */

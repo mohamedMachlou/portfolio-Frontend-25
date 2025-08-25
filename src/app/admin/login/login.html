@@ -1,21 +1,57 @@
 <div class="login">
-    <div class="login-body">
-        <div class="form">
+  <div class="login-body">
+    <form [formGroup]="form" (ngSubmit)="login()" class="form">
+      <div class="form-group">
+        <label for="">EMAIL</label>
+        <input (keyup)="isvalid()" formControlName="email" type="text" />
 
-          <div class="form-group">
-            <label for="">USERNAME</label>
-            <input type="text">
+        @if (email?.touched && email?.errors) {
+        <div class="alert-danger mt-1">
+          @if (email?.errors?.['required']) {
+          <div>email est obligatoire !</div>
+          } @if (email?.errors?.['minlength']) {
+          <div>
+            email doit avoir au moins
+            {{ email?.errors?.['minlength'].requiredLength }} caractères
           </div>
-
-          <div class="form-group">
-            <label for="">PASSWORD</label>
-            <input type="text">
+          } @if (email?.errors?.['maxlength']) {
+          <div>
+            email doit avoir au maximum
+            {{ email?.errors?.['maxlength'].requiredLength }} caractères
           </div>
-
-          <div class="form-group">
-            <button type="submit">SUBMIT</button>
-          </div>
-
+          } @if (email?.errors?.['pattern']) {
+          <div>email doit être yourname&#64;exmple.com</div>
+          }
         </div>
-    </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="">PASSWORD</label>
+        <input formControlName="password" type="text" />
+
+        @if (password?.touched && password?.invalid) {
+        <div [ngClass]="{ 'alert-danger': password?.invalid }" class="mt-1">
+          @if (password?.errors?.['required']) {
+          <div>password est obligatoire !</div>
+          } @if (password?.errors?.['minlength']) {
+          <div>
+            password doit avoir au moins
+            {{ password?.errors?.['minlength'].requiredLength }} caractères
+          </div>
+          } @if (password?.errors?.['maxlength']) {
+          <div>
+            password doit avoir au maximum
+            {{ password?.errors?.['maxlength'].requiredLength }} caractères
+          </div>
+          }
+        </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </div>
 </div>

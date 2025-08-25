@@ -16,7 +16,7 @@
 .login .login-body .form {
   width: 400px;
   height: 350px;
-  padding: 40px 20px;
+  padding: 40px 30px;
   background-color: #131212;
   border-radius: 8px;
   display: flex;
@@ -27,7 +27,7 @@
 }
 
 .login .login-body .form .form-group {
-  width: 360px;
+  width: 340px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
